@@ -551,6 +551,7 @@
                 emailjs.sendForm('service_4otefuu', 'template_ad1m7vh', this)
                     .then(() => {
                         alert('Thank You for your response');
+                        this.reset();
                     }, (error) => {
                         alert('FAILED...', error);
                     });
